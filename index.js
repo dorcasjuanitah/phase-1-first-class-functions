@@ -1,3 +1,19 @@
+function receivesAFunction(callback) {
+    
+    callback();
+  }
+  function returnsANamedFunction() {
+    function namedFunction() {
+    
+    }
+    return namedFunction;
+    }
+
+    
+  function returnsAnAnonymousFunction(){
+return function(){
+
+
 /*function receivesAFunction() {
     spy();
    
@@ -9,8 +25,3 @@
   function returnsAnamedFunction(){
 
   }*/
-  function receivesAFunction(callback) {
-  setTimeout(function () {
-    callback()
-  }, 2000)
-}
